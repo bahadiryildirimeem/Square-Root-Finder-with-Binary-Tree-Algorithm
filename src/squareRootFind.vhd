@@ -19,7 +19,7 @@ signal numQ          : STD_LOGIC_VECTOR(NUM_DPT-1 downto 0) := (others=>'0');
 signal valQ          : STD_LOGIC_VECTOR(NUM_DPT-1 downto 0) := (others=>'0');
 signal doneQ         : STD_LOGIC := '0';
 -- INTERNAL SIGNALS
-signal bitCntQ       : INTEGER RANGE 0 TO NUM_DPT-1 := 0;
+signal bitCntQ       : INTEGER RANGE -(NUM_DPT-1) TO NUM_DPT-1 := 0;
 signal processingQ   : STD_LOGIC := '0';
 signal toggle        : STD_LOGIC := '0';
 

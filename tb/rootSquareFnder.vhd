@@ -62,9 +62,11 @@ BEGIN
 		START <= '1';
 		wait for CLK_period;
 		START <= '0';
-		wait for 10 us;
+		wait for 1 us;
 		START <= '1';
-
+		NUM <= x"0100";
+		wait for CLK_period;
+		wait for 1 us;
       wait;
    end process;
 
